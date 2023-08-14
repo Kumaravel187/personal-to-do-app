@@ -43,7 +43,7 @@ The app uses LocalStorage to store your tasks locally in the browser. This means
 
 ## Links
 
-- Solution URL:
+- Solution URL: https://endearing-daffodil-59c249.netlify.app/
 
 ## Tutorial
 
