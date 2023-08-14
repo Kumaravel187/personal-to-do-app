@@ -16,15 +16,6 @@ The project is structured as follows:
 
 todo-app/
 
-├── app/
-│└── app.js
-├── styles/
-│└── style.css
-│└── style.scss
-│└── style.css.map
-├── index.html
-└── readme.md
-
 - `app/`: Directory containing JavaScript files.
   - `app.js`: Contains the main app logic and interaction.
 - `styles/`: Directory containing CSS and SCSS files for styling.
