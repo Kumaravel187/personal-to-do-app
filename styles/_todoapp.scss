@@ -1,7 +1,8 @@
+/* Styles for the container */
 .container {
   width: 100%;
   min-height: 100vh;
-  // random gradient can be found here: https://cssgradient.io/
+  /* Background gradient */
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
@@ -10,40 +11,42 @@
   padding: 1rem;
   border: 1px solid black;
 
+  /* Styles for the to-do section */
   .todo {
-    // width will always be 100% until it reaches max-width
+    /* Width and max-width settings */
     width: 100%;
     max-width: 540px;
-    background: $palegreen;
+    background: $palegreen; /* Set background color */
     margin: 6.25rem auto 1.25rem;
     padding: 2.5rem 1.875rem 4.375rem;
     border-radius: 0.8rem;
 
+    /* Styles for the to-do header */
     &__header {
       color: darkgreen;
       font-weight: 700;
       display: flex;
-
       align-items: center;
     }
 
+    /* Styles for the to-do image */
     &__img {
       width: 2rem;
       margin-left: 1rem;
     }
 
+    /* Styles for the input row */
     &__row {
-      //   border: 1px solid red;
+      /* Display and alignment settings */
       display: flex;
       align-items: center;
-      //   justify-content: space-around;
-      background: $darkgreen;
+      background: $darkgreen; /* Set background color */
       border-radius: 2rem;
       margin-top: 1rem;
       padding-left: 1rem;
       overflow: hidden;
-      //   margin-bottom: 1.5rem;
 
+      /* Styles for the input field */
       input {
         flex: 3;
         border: none;
@@ -54,12 +57,14 @@
         color: whitesmoke;
         font-size: 1rem;
 
+        /* Placeholder styles */
         &::placeholder {
           color: whitesmoke;
           font-weight: 500;
         }
       }
 
+      /* Styles for the add button */
       .btn {
         flex: 1;
         border: none;
@@ -72,6 +77,7 @@
         transition: all 300ms ease-in-out;
         background: $blackgreen;
 
+        /* Button hover effect */
         &:hover {
           background-color: goldenrod;
           color: black;
@@ -81,11 +87,12 @@
       }
     }
 
+    /* Styles for the to-do list */
     ul {
       li {
+        /* List item positioning and styling */
         position: relative;
-        // border: 1px solid black;
-        background: $lightgreen;
+        background: $lightgreen; /* Set background color */
         border-bottom-left-radius: 2rem;
         border-top-left-radius: 2rem;
         list-style: none;
@@ -95,6 +102,7 @@
         padding: 1rem 1rem 1rem 4rem;
         margin: 1rem 0;
 
+        /* Checkbox icon */
         &::before {
           content: "";
           position: absolute;
@@ -109,6 +117,7 @@
         }
       }
 
+      /* Checked list item styles */
       li.checked {
         color: #555;
         text-decoration: line-through;
@@ -120,8 +129,8 @@
   }
 }
 
+/* Styles for the delete icon */
 ul li span {
-  // border: 1px solid red;
   width: 5rem;
   height: 3.5rem;
   position: absolute;
@@ -134,6 +143,7 @@ ul li span {
   background: $blackgreen;
   cursor: pointer;
 
+  /* Delete icon hover effect */
   &:hover {
     background-color: goldenrod;
     color: black;

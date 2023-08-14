@@ -35,6 +35,16 @@ todo-app/
 
 The app uses LocalStorage to store your tasks locally in the browser. This means your tasks will persist even after you close the app. However, please note that LocalStorage has its limitations, such as a relatively small storage capacity (~5-10MB per domain) and data being stored as strings.
 
+## Screenshots
+
+<img src="image.png" alt="To do app" width="200"/>
+<img src="image-1.png" alt="To do app with task" width="200"/>
+<img src="image-2.png" alt="To do app with task mark as completed" width="200"/>
+
+## Links
+
+- Solution URL:
+
 ## Tutorial
 
 For a step-by-step tutorial on how this app was built, you can refer to the YouTube tutorial: [ToDo App Tutorial](https://www.youtube.com/watch?v=G0jO8kUrg-I&t=8s).
@@ -42,5 +52,3 @@ For a step-by-step tutorial on how this app was built, you can refer to the YouT
 ## Contributing
 
 Contributions are welcome! If you find any issues or have ideas for improvements, feel free to submit a pull request.
-
-Feel free to reach out if you have any questions or need further assistance. Happy coding!

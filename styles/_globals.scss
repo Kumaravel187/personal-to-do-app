@@ -1,18 +1,21 @@
+/* Global styles for HTML */
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 100%; /* Set the base font size to 16px */
 }
 
+/* Reset default styles for all elements */
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /* Use border-box for all elements */
   margin: 0;
   padding: 0;
 }
 
+/* Styles for the body element */
 body {
-  min-height: 100vh;
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
+  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: "Barlow Condensed", sans-serif; /* Set the font family for the body text */
 }

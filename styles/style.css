@@ -1,36 +1,47 @@
+/* Global styles for HTML */
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 100%; /* Set the base font size to 16px */
 }
 
+/* Reset default styles for all elements */
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /* Use border-box for all elements */
   margin: 0;
   padding: 0;
 }
 
+/* Styles for the body element */
 body {
-  min-height: 100vh;
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
+  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: "Barlow Condensed", sans-serif; /* Set the font family for the body text */
 }
 
+/* Styles for the container */
 .container {
   width: 100%;
   min-height: 100vh;
+  /* Background gradient */
   background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
   padding: 1rem;
   border: 1px solid black;
+  /* Styles for the to-do section */
 }
 .container .todo {
+  /* Width and max-width settings */
   width: 100%;
   max-width: 540px;
-  background: #cad2c5;
+  background: #cad2c5; /* Set background color */
   margin: 6.25rem auto 1.25rem;
   padding: 2.5rem 1.875rem 4.375rem;
   border-radius: 0.8rem;
+  /* Styles for the to-do header */
+  /* Styles for the to-do image */
+  /* Styles for the input row */
+  /* Styles for the to-do list */
 }
 .container .todo__header {
   color: darkgreen;
@@ -43,13 +54,16 @@ body {
   margin-left: 1rem;
 }
 .container .todo__row {
+  /* Display and alignment settings */
   display: flex;
   align-items: center;
-  background: #52796f;
+  background: #52796f; /* Set background color */
   border-radius: 2rem;
   margin-top: 1rem;
   padding-left: 1rem;
   overflow: hidden;
+  /* Styles for the input field */
+  /* Styles for the add button */
 }
 .container .todo__row input {
   flex: 3;
@@ -60,6 +74,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   color: whitesmoke;
   font-size: 1rem;
+  /* Placeholder styles */
 }
 .container .todo__row input::-moz-placeholder {
   color: whitesmoke;
@@ -80,6 +95,7 @@ body {
   cursor: pointer;
   transition: all 300ms ease-in-out;
   background: #2f3e46;
+  /* Button hover effect */
 }
 .container .todo__row .btn:hover {
   background-color: goldenrod;
@@ -87,9 +103,13 @@ body {
   font-weight: 700;
   border-radius: 2rem;
 }
+.container .todo ul {
+  /* Checked list item styles */
+}
 .container .todo ul li {
+  /* List item positioning and styling */
   position: relative;
-  background: #84a98c;
+  background: #84a98c; /* Set background color */
   border-bottom-left-radius: 2rem;
   border-top-left-radius: 2rem;
   list-style: none;
@@ -100,6 +120,7 @@ body {
   cursor: pointer;
   padding: 1rem 1rem 1rem 4rem;
   margin: 1rem 0;
+  /* Checkbox icon */
 }
 .container .todo ul li::before {
   content: "";
@@ -121,6 +142,7 @@ body {
   background-image: url(/images/checked.png);
 }
 
+/* Styles for the delete icon */
 ul li span {
   width: 5rem;
   height: 3.5rem;
@@ -133,6 +155,7 @@ ul li span {
   transition: all 300ms ease-in-out;
   background: #2f3e46;
   cursor: pointer;
+  /* Delete icon hover effect */
 }
 ul li span:hover {
   background-color: goldenrod;
